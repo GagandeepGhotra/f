@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import de.jensd.fx.glyphs.materialicons.*?>
+<?import de.jensd.fx.glyphs.weathericons.*?>
+<?import impl.org.controlsfx.skin.*?>
+<?import org.controlsfx.glyphfont.*?>
+<?import de.jensd.fx.glyphs.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="789.0" styleClass="parent" stylesheets="@../../CSS/Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fray.GUIs.ControllerClasses.LoginClassController">
+   <children>
+      <Pane fx:id="content_area" layoutX="374.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="435.0" styleClass="displayInformationMain">
+         <children>
+            <Label layoutX="50.0" layoutY="60.0" text="Welcome Back," textFill="#616364">
+               <font>
+                  <Font name="Impact" size="32.0" />
+               </font></Label>
+            <Label layoutX="27.0" layoutY="100.0" text="Sign in to continue" textFill="#616364">
+               <font>
+                  <Font name="Impact" size="19.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="uTF" focusColor="BLACK" labelFloat="true" layoutX="50.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Username" unFocusColor="#888c8d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pTF" focusColor="BLACK" labelFloat="true" layoutX="50.0" layoutY="331.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Password" unFocusColor="#888c8d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="loginBtn" buttonType="RAISED" layoutX="50.0" layoutY="417.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#openNewStage" prefHeight="50.0" prefWidth="300.0" styleClass="loginBtn" text="Login">  <!-- onKeyPressed="#handleEnterPressed" onMousePressed="#login_app" -->
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="126.0" layoutY="484.0" prefHeight="1.0" prefWidth="82.0" text="New User?" textFill="#616364">
+               <font>
+                  <Font name="Impact" size="19.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="signUpBtn" buttonType="RAISED" layoutX="216.0" layoutY="480.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#mousePressed" prefHeight="32.0" prefWidth="100.0" styleClass="loginBtn" text="Sign Up"> <!-- onKeyPressed="#mousePressed" onMousePressed="#login_app" -->
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="close" fitHeight="40.0" fitWidth="43.0" layoutX="350.0" layoutY="14.0" onMouseClicked="#closeApplication" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/cancel.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <VBox alignment="CENTER" layoutX="-2.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="420.0" style="-fx-background-color: transparent;" styleClass="vbox">
+         <children>
+            <ImageView fitHeight="604.0" fitWidth="422.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Images/Untitled2-2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+.displayIconMain {
+	-fx-background-color: #411D06;
+}
+
+.descriptionTextArea {
+	-fx-text-fill: #FFF;
+}
+
+.displayInformationMain {
+	-fx-background-color: #F3F5F4;
+}
+
+.displayInformationMain1 {	
+	-fx-background-color: transparent;
+}
+
+.loginBtn {
+	-fx-background-color: #888c8d; /*#411D06 */
+	-fx-text-fill: #FFF;
+	
+}
+
+.parent {
+	-fx-background-color: transparent;
+}
+
+.loginBtn:hover {
+	-fx-background-color: transparent;
+	-fx-text-fill: #52311C;
+	-fx-border-color: #52311C;
+	-fx-border-style: solid;
+}
+
+.loginBtn1 {
+	-fx-background-color: #411D06;
+	-fx-text-fill: #FFF;
+}
+
+.loginBtn1:hover {
+	-fx-pref-width: 123px;
+	-fx--pref-height: 280px;
+	-fx-background-color: transparent;
+	-fx-border-color: #52311C;
+	-fx-border-style: solid;
+}
